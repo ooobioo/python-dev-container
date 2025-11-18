@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    develop:
+      watch:
+        - path: app/
+          # action: sync+restart
+          action: rebuild
+          target: /app
+          # target: /app/app
+        - path: requirements.txt
+          action: rebuild
+    ports:
+      - 8080:8080
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8080
