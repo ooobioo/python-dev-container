@@ -24,5 +24,5 @@ def read_root():
 @app.get("/ip")
 async def get_client_ip(request: Request):
     client_host = request.client.host
-    # return JSONResponse(content={"ip": get_ip_address()})
-    return JSONResponse(content={"ip": "hello world x x"})
+    return JSONResponse(content={"ip": get_ip_address()})
+    # return JSONResponse(content={"ip": "hello world x x"})

@@ -1,6 +1,8 @@
 services:
   app:
-    build: .
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
     develop:
       watch:
         - path: app/
