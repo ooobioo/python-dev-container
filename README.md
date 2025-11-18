@@ -1,6 +1,40 @@
 # Python Docker Development Container
 
+## Prerequisites for Running Docker Development Containers
+
+### Essential Software
+
+- **Docker Desktop** (Windows/Mac) or **Docker Engine** (Linux) - latest version installed and running
+- **Visual Studio Code** or another IDE with dev container support
+- **Dev Containers Extension** (for VS Code) - install from the extensions marketplace
+- **Git client** - for version control
+
+### System Requirements (Windows)
+
+- **WSL2** (Windows Subsystem for Linux) or **Hyper-V** enabled
+- **Administrator privileges** during Docker Desktop installation
+
+### Configuration Files
+
+- **Dockerfile** or **Dockerfile.dev** - defines your container environment
+- **devcontainer.json** - specifies VS Code dev container configuration
+- **docker-compose.yml** - optional, for orchestrating multiple containers
+
+### Development Environment
+
+- **Text editor or IDE** - for editing files
+- **Command line interface (CLI)** - familiarity with terminal commands
+- **Internet connection** - for pulling Docker images
+
+### Optional Components
+
+- **Docker Compose** - for multi-container applications
+- **Language-specific tools** - Python, Node.js, etc., depending on your project
+- **Project dependencies** - requirements.txt, package.json, etc.
+
 ## Start a Docker Container with Compose Watch
+
+The Development Container from this project can be started with this command:
 
 ```
 
@@ -23,6 +57,7 @@ In essence, this command is used for a development setup to automatically reflec
 - For Docker-related setup and usage, see [Docker Documentation](/docs/DOCKER.md).
 - For Docker-Compose-related setup and usage, see [Docker Compose Documentation](/docs/DOCKER-COMPOSE.md).
 - For Docker-Compose-Watch-related setup and usage, see [Docker Compose Watch Documentation](/docs/DOCKER-COMPOSE-WATCH.md).
+- For Docker-DOCKERFILE-related setup and usage, see [Docker DOCKERFILE Documentation](/docs/DOCKER-DOCKERFILE.md).
 
 ## Sources
 
